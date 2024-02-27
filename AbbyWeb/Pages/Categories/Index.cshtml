@@ -26,6 +26,7 @@
                 <th class="text-white">
                     Display Order
                 </th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -37,6 +38,18 @@
                     </td>
                     <td class="text-white">
                         @obj.DisplayOrder
+                    </td>
+                    <td>
+                        <div class="w-75 btn-group" role="group" >
+
+                        <a asp-page="Edit" asp-route-id="@obj.Id" class="btn btn-primary mx-2">
+                            Edit
+                        </a>
+                        <a asp-page="Delete" class="btn btn-danger mx-2">
+                            Edit
+                        </a>
+
+                        </div>
                     </td>
                 </tr>
             }
