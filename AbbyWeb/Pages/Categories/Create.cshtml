@@ -1,0 +1,22 @@
+﻿@page
+@model AbbyWeb.Pages.Categories.CreateModel
+
+<form method="post">
+    <div class="border p-3 mt-4">
+          <div class="row pb-2">
+              <h2>Create Category</h2>
+              <hr />
+          </div>
+          <div class="mb-3 mb-3">
+              Name:
+              <input type="text" name="CategoryName" />
+          </div>
+        <div class="mb-3 mb-3">
+            Display Order:
+            <input type="text" name="displayOrder" />
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary" style="width:150px" >Create</button>
+        </div>
+    </div>
+</form>
