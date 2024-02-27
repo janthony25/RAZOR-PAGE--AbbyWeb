@@ -2,24 +2,26 @@
 @model AbbyWeb.Pages.Categories.IndexModel
 
 <div class="container p-3">
+    <div class="row">
+
+   
     <div class="col-6">
         <h2 class="text-primary">Category List</h2>
     </div>
-    <div class="col-6">
-        <a asp-page="create" class="btn btn-primary">
-            Create New Category
-        </a>
+    <div class="col-6 text-end">
+        <button class="btn btn-primary">Create New Category</button>
     </div>
 
     <br />
+    </div>
 
     <table class="table table-bordered table-striped" style="width:100%">
         <thead>
             <tr>
-                <th>
+                <th class="text-white">
                     Category Name
                 </th>
-                <th>
+                <th class="text-white">
                     Display Order
                 </th>
             </tr>
@@ -28,10 +30,10 @@
             @foreach(var obj in Model.Categories)
             {
                 <tr>
-                    <td>
+                    <td class="text-white">
                         @obj.Name
                     </td>
-                    <td>
+                    <td class="text-white">
                         @obj.DisplayOrder
                     </td>
                 </tr>
