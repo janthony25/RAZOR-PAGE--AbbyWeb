@@ -31,7 +31,8 @@ namespace AbbyWeb.Pages.Categories
                 {
                     _db.Category.Remove(categoryFromDb);
                     await _db.SaveChangesAsync();
-                    return RedirectToPage("Index");
+                TempData["success"] = "Category removed succesfully";
+                return RedirectToPage("Index");
                 }
                  
             
